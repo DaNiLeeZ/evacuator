@@ -1,0 +1,145 @@
+* { margin: 0; padding: 0; }
+.grandpa {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    max-width: 1910px;
+    height: 100px;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f2f2f3;
+    Z-index: 2;
+}
+.ul {
+    text-indent: 30px;
+    line-height: 30px;
+    font-size: 25px;
+}
+@media screen and (max-width: 550px) {
+    .nav {
+        display: flex;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        max-width: 1910px;
+        height: 100px;
+        justify-content: flex-end;
+        flex-direction: column;
+        background-color: #f2f2f3;
+        Z-index: 2;
+    }
+
+    .ul  {
+        text-indent: 30px;
+        line-height: 30px;
+        font-size: 25px;
+    }
+}
+.parent2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1910px;
+    height: 700px;
+    background-image: url("https://myskillsconnect.com/uploads/posts/2023-08/1690856593_myskillsconnect-com-p-evakuator-stokovoe-foto-37.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: brightness(40%);
+    z-index: 1;
+}
+.parent2 > p {
+    line-height: 85px;
+    font-size: 40px;
+}
+.parent3 {
+    justify-content: center;
+    width: 100%;
+    max-width: 1910px;
+    height: 500px;
+    display: flex;;
+    background-color: aliceblue;
+    position: relative;
+    z-index: 1;
+}
+.parent3 > div {
+    line-height: 85px;
+    font-size: 40px;
+}
+.parent4 {
+    display: flex;
+    justify-content: center;
+    background-image: url("https://kto-kem.ru/wp-content/uploads/2022/01/depositphotos-128412126-xl-2015.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-x: -17px;
+    width: 100%;
+    max-width: 1910px;
+    height: 250px;
+    filter: brightness(40%);
+    z-index: 1;
+}
+.parent4 > div {
+    line-height: 85px;
+    font-size: 40px;
+}
+.parent5 {
+    justify-content: center;
+    width: 100%;
+    max-width: 1910px;
+    height: 375px;
+    display: flex;
+    background-color: aliceblue;
+    z-index: 1;
+}
+.parent5 > div {
+    line-height: 85px;
+    font-size: 40px;
+}
+.parent6 {
+    justify-content: center;
+    display: flex;
+    background-color: #181635;
+    width: 100%;
+    max-width: 1910px;
+    height: 385px;
+    z-index: 1;
+}
+.parent6 > div {
+    line-height: 85px;
+    font-size: 40px;
+}
+.parent7 {
+    justify-content: center;
+    display: flex;
+    background-color: aliceblue;
+    width: 100%;
+    max-width: 1910px;
+    height: 335px;
+    z-index: 1;
+}
+.parent7 > div {
+    line-height: 85px;
+    font-size: 40px;
+}
+.parent8 {
+    justify-content: center;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    max-width: 1910px;
+    height: 850px;
+    z-index: 1;
+}
+.parent8 > div {
+    line-height: 85px;
+    font-size: 40px;
+}
