@@ -1,10 +1,11 @@
 * { margin: 0; padding: 0; }
-.grandpa {
+.site-style {
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     position: relative;
 }
-.nav {
+.navigation {
     display: flex;
     position: sticky;
     top: 0;
@@ -17,13 +18,29 @@
     background-color: #f2f2f3;
     Z-index: 2;
 }
-.ul {
-    text-indent: 30px;
+.navigation {
+    list-style: none;
+    text-indent: 45px;
     line-height: 30px;
     font-size: 25px;
 }
-@media screen and (max-width: 550px) {
-    .nav {
+.navigation:hover {
+    list-style: none;
+    text-indent: 45px;
+    line-height: 30px;
+    font-size: 25px;
+}
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+}
+@media screen and (max-width: 590px) {
+    .navigation {
+        outline: none;
+        text-decoration: none;
         display: flex;
         position: sticky;
         top: 0;
@@ -35,14 +52,22 @@
         background-color: #f2f2f3;
         Z-index: 2;
     }
-
-    .ul  {
-        text-indent: 30px;
+    .navigation {
+        color: darkblue;
+        list-style: none;
+        text-indent: 45px;
+        line-height: 30px;
+        font-size: 25px;
+    }
+    .navigation:hover {
+        color: blue;
+        list-style: none;
+        text-indent: 45px;
         line-height: 30px;
         font-size: 25px;
     }
 }
-.parent2 {
+.front {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -56,11 +81,11 @@
     filter: brightness(40%);
     z-index: 1;
 }
-.parent2 > p {
+.front > p {
     line-height: 85px;
     font-size: 40px;
 }
-.parent3 {
+.how-call {
     justify-content: center;
     width: 100%;
     max-width: 1910px;
@@ -70,11 +95,11 @@
     position: relative;
     z-index: 1;
 }
-.parent3 > div {
+.how-call > div {
     line-height: 85px;
     font-size: 40px;
 }
-.parent4 {
+.dignities {
     display: flex;
     justify-content: center;
     background-image: url("https://kto-kem.ru/wp-content/uploads/2022/01/depositphotos-128412126-xl-2015.jpeg");
@@ -87,11 +112,11 @@
     filter: brightness(40%);
     z-index: 1;
 }
-.parent4 > div {
+.dignities > div {
     line-height: 85px;
     font-size: 40px;
 }
-.parent5 {
+.cost {
     justify-content: center;
     width: 100%;
     max-width: 1910px;
@@ -100,11 +125,11 @@
     background-color: aliceblue;
     z-index: 1;
 }
-.parent5 > div {
+.cost > div {
     line-height: 85px;
     font-size: 40px;
 }
-.parent6 {
+.why-is-it-needed {
     justify-content: center;
     display: flex;
     background-color: #181635;
@@ -113,11 +138,11 @@
     height: 385px;
     z-index: 1;
 }
-.parent6 > div {
+.why-is-it-needed > div {
     line-height: 85px;
     font-size: 40px;
 }
-.parent7 {
+.our-works {
     justify-content: center;
     display: flex;
     background-color: aliceblue;
@@ -126,11 +151,11 @@
     height: 335px;
     z-index: 1;
 }
-.parent7 > div {
+.our-works > div {
     line-height: 85px;
     font-size: 40px;
 }
-.parent8 {
+.why-we-are {
     justify-content: center;
     display: flex;
     background-color: white;
@@ -139,7 +164,7 @@
     height: 850px;
     z-index: 1;
 }
-.parent8 > div {
+.why-we-are > div {
     line-height: 85px;
     font-size: 40px;
 }
