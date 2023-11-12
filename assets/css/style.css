@@ -1,4 +1,11 @@
 * { margin: 0; padding: 0; }
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+}
 .button-call {
     background-color: limegreen;
     padding: 20px;
@@ -19,6 +26,7 @@
     position: relative;
 }
 .navigation {
+    box-sizing: border-box;
     display: flex;
     position: sticky;
     top: 0;
@@ -30,7 +38,7 @@
     align-items: center;
     background-color: #f2f2f3;
     Z-index: 2;
-    padding: 0 80px 0 0;
+    padding: 0 60px 0 0;
     list-style: none;
     text-indent: 45px;
     line-height: 30px;
@@ -68,43 +76,6 @@
     height: 130px;
     width: 130px;
 
-}
-a {
-    color: darkblue;
-    text-decoration: none;
-}
-a:hover {
-    color: blue;
-}
-@media screen and (max-width: 590px) {
-    .navigation {
-        outline: none;
-        text-decoration: none;
-        display: flex;
-        position: sticky;
-        top: 0;
-        width: 100%;
-        max-width: 1910px;
-        height: 100px;
-        justify-content: flex-end;
-        flex-direction: column;
-        background-color: #f2f2f3;
-        Z-index: 2;
-    }
-    .navigation {
-        color: darkblue;
-        list-style: none;
-        text-indent: 45px;
-        line-height: 30px;
-        font-size: 25px;
-    }
-    .navigation:hover {
-        color: blue;
-        list-style: none;
-        text-indent: 45px;
-        line-height: 30px;
-        font-size: 25px;
-    }
 }
 .front {
     display: flex;
@@ -212,4 +183,36 @@ a:hover {
 .why-we-are > div {
     line-height: 85px;
     font-size: 40px;
+}
+@media screen and (max-width: 590px) {
+    .navigation {
+        outline: none;
+        text-decoration: none;
+        display: flex;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        max-width: 1910px;
+        height: 100px;
+        justify-content: flex-end;
+        flex-direction: column;
+        background-color: #f2f2f3;
+        Z-index: 2;
+    }
+
+    .navigation {
+        color: darkblue;
+        list-style: none;
+        text-indent: 45px;
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    .navigation:hover {
+        color: blue;
+        list-style: none;
+        text-indent: 45px;
+        line-height: 30px;
+        font-size: 25px;
+    }
 }
