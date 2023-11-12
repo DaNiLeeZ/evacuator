@@ -5,6 +5,14 @@ a {
 a:hover {
     color: blue;
 }
+.site-style {
+    font-family: "Montserrat-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-variant: small-caps;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 .button-call {
     background-color: limegreen;
     padding: 20px;
@@ -17,12 +25,6 @@ a:hover {
     position: fixed;
     bottom: 30px;
     right: 30px;
-}
-.site-style {
-    font-family: "Poppins", Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    position: relative;
 }
 .navigation {
     display: flex;
@@ -97,8 +99,18 @@ a:hover {
     line-height: 85px;
     font-size: 60px;
 }
-.how-call {
+.description-dignities {
+    display: flex;
+    background-color: aliceblue;
     justify-content: center;
+}
+.description-dignities > p {
+    padding: 10px;
+    font-size: 50px;
+}
+.dignities {
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     max-width: 1910px;
     height: 500px;
@@ -107,55 +119,187 @@ a:hover {
     position: relative;
     z-index: 1;
 }
-.how-call > div {
-    line-height: 85px;
-    font-size: 40px;
-}
-.dignities {
-    display: flex;
-    justify-content: center;
-    background-image: url("https://kto-kem.ru/wp-content/uploads/2022/01/depositphotos-128412126-xl-2015.jpeg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position-x: -17px;
-    width: 100%;
-    max-width: 1910px;
-    height: 250px;
-    filter: brightness(40%);
-    z-index: 1;
-}
 .dignities > div {
-    line-height: 85px;
-    font-size: 40px;
+    border-radius: 30px;
+    background-color: lightblue;
+    font-size: 35px;
+    width: 400px;
+    height: 450px;
+    padding: 20px;
+}
+.way  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.way > img {
+    height: 90px;
+    width: 90px;
+}
+.speed {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.low-prices {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.description-cost {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+.description-cost > p {
+    padding: 10px;
+    font-size: 50px;
 }
 .cost {
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     max-width: 1910px;
     height: 375px;
     display: flex;
-    background-color: aliceblue;
+    background-color: white;
     z-index: 1;
 }
 .cost > div {
-    line-height: 85px;
+    border-radius: 30px;
+    background-color: lightblue;
     font-size: 40px;
+    width: 450px;
+    height: 300px;
 }
-.why-is-it-needed {
+.cost-cars {
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+.cost-cars-top {
+    border-radius: 30px 30px 0 0;
+    width: 450px;
+    height: 200px;
+}
+.cost-cars-top > img {
+    border-radius: 30px 30px 0 0;
+}
+.cost-cars-down {
+    border-radius: 0 0 30px 30px;
+    background-color: aliceblue;
+    width: 450px;
+    height: 100px;
+}
+.type-car {
+    color: limegreen;
+    font-size: 35px;
+    padding: 8px;
+}
+.cost-car {
+    display: flex;
+    justify-content: flex-end;
+    color: cadetblue;
+    font-size: 30px;
+    padding: 8px;
+}
+.cost-trucks {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cost-trucks-top {
+    border-radius: 30px 30px 0 0;
+    width: 450px;
+    height: 200px;
+}
+.cost-trucks-top > img {
+    border-radius: 30px 30px 0 0;
+}
+.cost-trucks-down {
+    border-radius: 0 0 30px 30px;
+    background-color: aliceblue;
+    width: 450px;
+    height: 100px;
+}
+.type-truck {
+    color: limegreen;
+    font-size: 35px;
+    padding: 8px;
+}
+.cost-truck {
+    display: flex;
+    justify-content: flex-end;
+    color: cadetblue;
+    font-size: 30px;
+    padding: 8px;
+}
+.description-reviews {
+    display: flex;
+    background-color: #181635;
+    justify-content: center;
+}
+.description-reviews > p {
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+}
+.reviews {
+    align-items: center;
+    justify-content: space-evenly;
     display: flex;
     background-color: #181635;
     width: 100%;
     max-width: 1910px;
-    height: 385px;
-    z-index: 1;
+    height: 450px;
 }
-.why-is-it-needed > div {
-    line-height: 85px;
-    font-size: 40px;
+.reviews > div {
+    border-radius: 30px;
+    background-color: white;
+    font-size: 35px;
+    width: 300px;
+    height: 430px;
+}
+.review1 {
+    flex-direction: column;
+    border-radius: 30px;
+    display: flex;
+}
+.review1 > img {
+    border-radius: 100px;
+    width: 120px;
+    height: 120px;
+}
+.review2 {
+    flex-direction: column;
+    border-radius: 30px;
+    display: flex;
+}
+.review2 > img {
+    border-radius: 100px;
+    width: 120px;
+    height: 120px;
+}
+.review3 {
+    flex-direction: column;
+    border-radius: 30px;
+    display: flex;
+}
+.review3 > img {
+    border-radius: 100px;
+    width: 120px;
+    height: 120px;
+}
+.description-our-works {
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    font-size: 50px;
+    padding: 10px;
 }
 .our-works {
     justify-content: center;
+    align-items: center;
     display: flex;
     background-color: aliceblue;
     width: 100%;
@@ -163,9 +307,9 @@ a:hover {
     height: 335px;
     z-index: 1;
 }
-.our-works > div {
-    line-height: 85px;
-    font-size: 40px;
+.our-works > img {
+    height: 290px;
+    border-radius: 30px;
 }
 .why-we-are {
     justify-content: center;
