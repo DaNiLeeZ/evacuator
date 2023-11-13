@@ -90,8 +90,8 @@ a:hover {
 }
 .logo > img {
     width: 100%;
-    max-width: 300px;
-    height: 133px;
+    max-width: 200px;
+    height: 100px;
 }
 .front {
     display: flex;
