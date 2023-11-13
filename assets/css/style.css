@@ -20,8 +20,10 @@ a:hover {
     cursor: pointer;
     border-radius: 100%;
     Z-index: 3;
-    height: 76px;
-    width: 76px;
+    height: 100%;
+    max-height: 76px;
+    width: 100%;
+    max-width: 76px;
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -55,9 +57,8 @@ a:hover {
     background-color: darkblue;
     padding: 0;
     border-radius: 0 0 150px 0;
-    height: 100%;
     width: 100%;
-    max-height: 140px;
+    height: 140px;
     max-width: 750px;
     position: fixed;
     align-items: center;
@@ -73,7 +74,9 @@ a:hover {
     color: lightgray;
 }
 .logo > img {
-    max-height: 70px;
+    width: 100%;
+    max-width: 300px;
+    height: 133px;
 }
 .front {
     display: flex;
@@ -100,6 +103,8 @@ a:hover {
     font-size: 60px;
 }
 .description-dignities {
+    width: 100%;
+    max-width: 1910px;
     display: flex;
     background-color: aliceblue;
     justify-content: center;
@@ -123,7 +128,8 @@ a:hover {
     border-radius: 30px;
     background-color: lightblue;
     font-size: 35px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 450px;
     padding: 20px;
 }
@@ -134,7 +140,8 @@ a:hover {
 }
 .way > img {
     height: 90px;
-    width: 90px;
+    width: 100%;
+    max-width: 90px;
 }
 .speed {
     display: flex;
@@ -147,6 +154,8 @@ a:hover {
     flex-direction: column;
 }
 .description-cost {
+    width: 100%;
+    max-width: 1910px;
     display: flex;
     background-color: white;
     justify-content: center;
@@ -169,7 +178,8 @@ a:hover {
     border-radius: 30px;
     background-color: lightblue;
     font-size: 40px;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 300px;
 }
 .cost-cars {
@@ -179,7 +189,8 @@ a:hover {
 }
 .cost-cars-top {
     border-radius: 30px 30px 0 0;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 200px;
 }
 .cost-cars-top > img {
@@ -188,7 +199,8 @@ a:hover {
 .cost-cars-down {
     border-radius: 0 0 30px 30px;
     background-color: aliceblue;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 100px;
 }
 .type-car {
@@ -210,7 +222,8 @@ a:hover {
 }
 .cost-trucks-top {
     border-radius: 30px 30px 0 0;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 200px;
 }
 .cost-trucks-top > img {
@@ -219,7 +232,8 @@ a:hover {
 .cost-trucks-down {
     border-radius: 0 0 30px 30px;
     background-color: aliceblue;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 100px;
 }
 .type-truck {
@@ -257,8 +271,10 @@ a:hover {
     border-radius: 30px;
     background-color: white;
     font-size: 35px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 430px;
+    padding: 8px;
 }
 .review1 {
     flex-direction: column;
@@ -267,7 +283,8 @@ a:hover {
 }
 .review1 > img {
     border-radius: 100px;
-    width: 120px;
+    width: 100%;
+    max-width: 120px;
     height: 120px;
 }
 .review2 {
@@ -277,7 +294,8 @@ a:hover {
 }
 .review2 > img {
     border-radius: 100px;
-    width: 120px;
+    width: 100%;
+    max-width: 120px;
     height: 120px;
 }
 .review3 {
@@ -287,42 +305,34 @@ a:hover {
 }
 .review3 > img {
     border-radius: 100px;
-    width: 120px;
+    width: 100%;
+    max-width: 120px;
     height: 120px;
 }
 .description-our-works {
     display: flex;
     background-color: aliceblue;
     justify-content: center;
+    width: 100%;
+    max-width: 1910px;
     font-size: 50px;
     padding: 10px;
 }
 .our-works {
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     background-color: aliceblue;
     width: 100%;
     max-width: 1910px;
-    height: 335px;
+    height: 835px;
     z-index: 1;
 }
 .our-works > img {
+    width: 100%;
+    max-width: 450px;
     height: 290px;
     border-radius: 30px;
-}
-.why-we-are {
-    justify-content: center;
-    display: flex;
-    background-color: white;
-    width: 100%;
-    max-width: 1910px;
-    height: 850px;
-    z-index: 1;
-}
-.why-we-are > div {
-    line-height: 85px;
-    font-size: 40px;
 }
 @media screen and (max-width: 590px) {
     .navigation {
@@ -339,7 +349,6 @@ a:hover {
         background-color: #f2f2f3;
         Z-index: 2;
     }
-
     .navigation {
         color: darkblue;
         list-style: none;
@@ -354,5 +363,223 @@ a:hover {
         text-indent: 45px;
         line-height: 30px;
         font-size: 25px;
+    }
+}
+@media screen and (max-width: 1024px)  {
+    .description-dignities {
+        width: 100%;
+        max-width: 1910px;
+        display: flex;
+        background-color: aliceblue;
+        justify-content: center;
+    }
+    .description-dignities > p {
+        padding: 10px;
+        font-size: 50px;
+    }
+    .dignities {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1910px;
+        height: 500px;
+        display: flex;;
+        background-color: aliceblue;
+        position: relative;
+        z-index: 1;
+    }
+    .dignities > div {
+        border-radius: 30px;
+        background-color: lightblue;
+        font-size: 35px;
+        width: 100%;
+        max-width: 400px;
+        height: 450px;
+        padding: 20px;
+    }
+    .way  {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .way > img {
+        height: 90px;
+        width: 100%;
+        max-width: 90px;
+    }
+    .speed {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .low-prices {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .description-cost {
+        width: 100%;
+        max-width: 1910px;
+        display: flex;
+        background-color: white;
+        justify-content: center;
+    }
+    .description-cost > p {
+        padding: 10px;
+        font-size: 50px;
+    }
+    .cost {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1910px;
+        height: 375px;
+        display: flex;
+        background-color: white;
+        z-index: 1;
+    }
+    .cost > div {
+        border-radius: 30px;
+        background-color: lightblue;
+        font-size: 40px;
+        width: 100%;
+        max-width: 450px;
+        height: 300px;
+    }
+    .cost-cars {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cost-cars-top {
+        border-radius: 30px 30px 0 0;
+        width: 100%;
+        max-width: 450px;
+        height: 200px;
+    }
+    .cost-cars-top > img {
+        width: 100%;
+        max-width: 450px;
+        height: 250px;
+        border-radius: 30px 30px 0 0;
+    }
+    .cost-cars-down {
+        border-radius: 0 0 30px 30px;
+        background-color: aliceblue;
+        width: 100%;
+        max-width: 450px;
+        height: 100px;
+    }
+    .type-car {
+        color: limegreen;
+        font-size: 35px;
+        padding: 8px;
+    }
+    .cost-car {
+        display: flex;
+        justify-content: flex-end;
+        color: cadetblue;
+        font-size: 30px;
+        padding: 8px;
+    }
+    .cost-trucks {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cost-trucks-top {
+        border-radius: 30px 30px 0 0;
+        width: 100%;
+        max-width: 450px;
+        height: 200px;
+    }
+    .cost-trucks-top > img {
+        width: 100%;
+        max-width: 450px;
+        height: 250px;
+        border-radius: 30px 30px 0 0;
+    }
+    .cost-trucks-down {
+        border-radius: 0 0 30px 30px;
+        background-color: aliceblue;
+        width: 100%;
+        max-width: 450px;
+        height: 100px;
+    }
+    .type-truck {
+        color: limegreen;
+        font-size: 35px;
+        padding: 8px;
+    }
+    .cost-truck {
+        display: flex;
+        justify-content: flex-end;
+        color: cadetblue;
+        font-size: 30px;
+        padding: 8px;
+    }
+    .description-reviews {
+        display: flex;
+        background-color: #181635;
+        justify-content: center;
+    }
+    .description-reviews > p {
+        color: white;
+        padding: 10px;
+        font-size: 50px;
+    }
+    .reviews {
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        display: flex;
+        background-color: #181635;
+        width: 100%;
+        max-width: 1910px;
+        height: 450px;
+    }
+    .reviews > div {
+        border-radius: 30px;
+        background-color: white;
+        font-size: 35px;
+        width: 100%;
+        max-width: 300px;
+        height: 430px;
+        padding: 8px;
+    }
+    .review1 {
+        flex-direction: column;
+        border-radius: 30px;
+        display: flex;
+    }
+    .review1 > img {
+        border-radius: 100px;
+        width: 100%;
+        max-width: 120px;
+        height: 120px;
+    }
+    .review2 {
+        flex-direction: column;
+        border-radius: 30px;
+        display: flex;
+    }
+    .review2 > img {
+        border-radius: 100px;
+        width: 100%;
+        max-width: 120px;
+        height: 120px;
+    }
+    .review3 {
+        flex-direction: column;
+        border-radius: 30px;
+        display: flex;
+    }
+    .review3 > img {
+        border-radius: 100px;
+        width: 100%;
+        max-width: 120px;
+        height: 120px;
     }
 }
