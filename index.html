@@ -1,112 +1,122 @@
 <!DOCTYPE html>
-    <html lang = "ru">
-        <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-            <meta charset="UTF-8">
-            <title>Эвакуаторы Ростов-на-Дону</title>
-            <link rel="stylesheet" href="assets/css/reset.css">
-            <link rel="stylesheet" href="assets/css/style.css">
-        </head>
-        <body>
-            <div class="site-style">
-                <div class="button-call" id="button-call">
-                    <div>
-                        <a href="tel:+79956973089"><img src="assets/img/call.png" alt="Кнопка Вызова"></a>
-                    </div>
-                </div>
-                <div class="whatsapp-button" id="whatsapp-button">
-                    <div>
-                        <a href="https://api.whatsapp.com/send/?phone=79956973089"><img src="assets/img/whatsapp.png" alt="Кнопка Ватсапп"></a>
-                    </div>
-                </div>
-                <nav class="navigation" id="navigation">
-                    <ul class="navigation">
-                        <li>
-                            <a href="#description-dignities">Наши достоинства</a>
-                        </li>
-                        <li>
-                            <a href="#description-cost">Расценки</a>
-                        </li>
-                        <li>
-                            <a href="#reviews">Отзывы</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="logo" id="logo">
-                    <img src="assets/img/logo.png" alt="Эвакуатор">
-                    <a href="#front">Эвакуаторы Ростов</a>
-                </div>
-                <div class="front" id="front">
-                    <p style="color: white;">Эвакуаторы Ростов-на-Дону</p>
-                    <span>
-                        <a href="tel:+79956973089">+79956973089</a>
-                    </span>
-                </div>
-                <div class="description-dignities" id="description-dignities">
-                    <p>Наши достоинства:</p>
-                </div>
-                <div class="dignities" id="dignities">
-                    <div class="way">
-                        <img src="assets/img/way.png" alt="Маршрут">
-                        <p>Доставляем ваш транспорт в любое место, как по городу, так и по России</p>
-                    </div>
-                    <div class="speed">
-                        <img src="assets/img/speed.png" alt="Таймер">
-                        <p>Быстрая подача эвакуатора, самая быстрая подача 20 минут</p>
-                    </div>
-                    <div class="low-prices">
-                        <img src="assets/img/low-prices.png" alt="Низкие цены">
-                        <p>Мы находимся в Ростове-на-Дону и работаем по ближайшим районам, поэтому мы приезжаем быстро и наши цены не высокие</p>
-                    </div>
-                </div>
-                <div class="description-cost" id="description-cost">
-                    <p>Наши цены и услуги:</p>
-                </div>
-                <div class="cost">
-                    <div class="cost-cars">
-                        <div class="cost-cars-top">
-                            <img src="assets/img/car1.jpg" alt="Перевозка легкового автомобиля">
-                        </div>
-                        <div class="cost-cars-down">
-                            <p class="type-car">Легковые автомобили</p>
-                            <p class="cost-car">От 1500р</p>
-                        </div>
-                    </div>
-                    <div class="cost-trucks">
-                        <div class="cost-trucks-top">
-                            <img src="assets/img/truck1.jpg" alt="Перевозка легкой спецтехники">
-                        </div>
-                        <div class="cost-trucks-down">
-                            <p class="type-truck">Легкая спецтехника</p>
-                            <p class="cost-truck">От 1500р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="description-reviews" id="description-reviews">
-                    <p>Отзывы:</p>
-                </div>
-                <div class="reviews" id="reviews">
-                    <div class="review1">
-                        <img src="assets/img/feedback3.jpg" alt="">
-                        <p style="color: grey;">Сергей</p>
-                        <p>Перевозка техники из Аксая до Ростова, все успешно, спасибо</p>
-                    </div>
-                    <div class="review2">
-                        <img src="assets/img/feedback2.jpg" alt="">
-                        <p style="color: grey;">Виталий</p>
-                        <p>Заклинило колесо, оперативно отвезли до СТО, отличная контора </p>
-                    </div>
-                    <div class="review3">
-                        <img src="assets/img/feedback.jpg" alt="">
-                        <p style="color: grey;">Дмитрий</p>
-                        <p>Сломался на трассе, быстро доехали и доставили до Ростова</p>
-                    </div>
-                </div>
-                <div class="description-our-works">
-                    <p>Наши работы:</p>
-                </div>
-                <div class="our-works">
-                    <img src="assets/img/work1.jpg" alt="">
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <title>Эвакуаторы Ростов-на-Дону</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="buttons-box">
+    <div class="button">
+        <a href="https://api.whatsapp.com/send/?phone=79956973089">
+            <img src="assets/img/whatsapp.png" alt="Кнопка Ватсапп">
+        </a>
+    </div>
+    <div class="button">
+        <a href="tel:+79956973089">
+            <img src="assets/img/call.png" alt="Кнопка Вызова">
+        </a>
+    </div>
+</div>
+<nav class="header" id="header">
+    <div class="logo">
+        <img src="assets/img/logo.png" alt="Эвакуатор">
+        <a href="#section-main">Эвакуация Ростов</a>
+    </div>
+    <ul class="navigation">
+        <li>
+            <a href="#section-dignities">Наши достоинства</a>
+        </li>
+        <li>
+            <a href="#section-cost">Расценки</a>
+        </li>
+        <li>
+            <a href="#section-reviews">Отзывы</a>
+        </li>
+    </ul>
+</nav>
+<section class="section-main" id="section-main">
+    <p style="color: white;">Эвакуаторы Ростов-на-Дону</p>
+    <span>
+        <a href="tel:+79956973089">+79956973089</a>
+    </span>
+</section>
+<section class="section-dignities" id="section-dignities">
+    <div class="container">
+        <h2>Наши достоинства:</h2>
+        <div class="items">
+            <div class="item">
+                <img src="assets/img/way.png" alt="Маршрут">
+                <p>Доставляем ваш транспорт в любое место, как по городу, так и по России</p>
+            </div>
+            <div class="item">
+                <img src="assets/img/speed.png" alt="Таймер">
+                <p>Быстрая подача эвакуатора, самая быстрая подача 20 минут</p>
+            </div>
+            <div class="item">
+                <img src="assets/img/low-prices.png" alt="Низкие цены">
+                <p>
+                    Мы находимся в Ростове-на-Дону и работаем по ближайшим районам,
+                    поэтому мы приезжаем быстро и наши цены не высокие
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-cost" id="section-cost">
+    <div class="container">
+        <h2>Наши цены и услуги:</h2>
+        <div class="items">
+            <div class="item">
+                <div class="photo" style="background-image: url('assets/picture/car1.jpeg')"></div>
+                <div class="info">
+                    <p class="type">Легковые автомобили</p>
+                    <p class="cost">От 1500р</p>
                 </div>
             </div>
-        </body>
+            <div class="item">
+                <div class="photo" style="background-image: url('assets/picture/truck1.jpg')"></div>
+                <div class="info">
+                    <p class="type">Легкая спецтехника</p>
+                    <p class="cost">От 1500р</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-reviews" id="section-reviews">
+    <div class="container">
+        <h2 style="color: white">Отзывы:</h2>
+            <div class="items">
+                <div class="item">
+                    <img src="assets/picture/feedback3.jpg" alt="">
+                    <p style="color: grey;">Сергей</p>
+                    <p>Перевозка техники из Аксая до Ростова, все успешно, спасибо</p>
+                </div>
+                <div class="item">
+                    <img src="assets/picture/feedback2.jpeg" alt="">
+                    <p style="color: grey;">Виталий</p>
+                    <p>Заклинило колесо, оперативно отвезли до СТО, отличная контора </p>
+                </div>
+                <div class="item">
+                    <img src="assets/picture/feedback1.jpeg" alt="">
+                    <p style="color: grey;">Дмитрий</p>
+                    <p>Сломался на трассе, быстро доехали и доставили до Ростова</p>
+                </div>
+        </div>
+    </div>
+</section>
+<section class="section-our-works">
+    <div class="container">
+        <h2>Наши работы:</h2>
+            <div class="items">
+                <div class="item">
+                    <img src="assets/picture/our-work1.jpeg" alt="">
+                </div>
+            </div>
+    </div>
+</section>
+</body>
+</html>
