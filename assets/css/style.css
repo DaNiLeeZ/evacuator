@@ -67,6 +67,11 @@ h2 {
     line-height: 30px;
     font-size: 25px;
 }
+.header .navigation li {
+    display: block;
+    margin: 0 20px;
+    text-align: center;
+}
 .header .logo {
     display: flex;
     background-color: darkblue;
@@ -78,7 +83,7 @@ h2 {
     position: fixed;
     align-items: center;
     justify-content: space-evenly;
-    z-index: 2;
+    z-index: 3;
     left: 0;
     top: 0;
 }
@@ -93,7 +98,7 @@ h2 {
 .header .logo > img {
     width: 100%;
     max-width: 180px;
-    height: 75px;
+    max-height: 75px;
 }
 .section-main {
     display: flex;
@@ -103,13 +108,29 @@ h2 {
     width: 100%;
     max-width: 1910px;
     height: 700px;
+    position: relative;
+}
+.section-main .background {
     background-image: url("https://myskillsconnect.com/uploads/posts/2023-08/1690856593_myskillsconnect-com-p-evakuator-stokovoe-foto-37.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
-    filter: brightness(40%);
-    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.section-main .background:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .section-main > p {
     line-height: 85px;
@@ -117,7 +138,12 @@ h2 {
 }
 .section-main > span {
     line-height: 85px;
-    font-size: 60px;
+    font-size: 100px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+.section-main span a {
+    color: lightblue;
 }
 .section-dignities {
     background-color: aliceblue;
@@ -254,14 +280,34 @@ h2 {
     }
 }
 @media (max-width:425px) {
+    .header {
+        position: relative;
+        height: auto;
+    }
     .header .navigation {
         flex-direction: column;
+        width: 100%;
+        font-size: 30px;
+        padding: 0;
+    }
+    .header .navigation li a {
+        display: inline-block;
+        width: 100%;
+        padding: 5px 0;
+    }
+    .header .logo {
+        text-align: center;
+    }
+    .header .logo > img {
+        max-width: 100px;
     }
     .section-main > p {
         font-size: 60px;
+        padding: 6px;
     }
     .section-main > span {
-        font-size: 40px;
+        padding: 6px;
+        font-size: 70px;
     }
     .section-dignities .items .item {
         width: 100%;
@@ -276,12 +322,30 @@ h2 {
         width: 100%;
     }
 }
-@media (max-width: 360px) {
+@media (max-width: 375px) {
     .header .navigation {
         font-size: 25px;
     }
     .header .logo > a {
         font-size: 30px;
+    }
+    .section-main > p {
+        font-size: 50px;
+        padding: 6px;
+    }
+    .section-main > span {
+        padding: 6px;
+        font-size: 60px;
+    }
+}
+@media (max-width: 320px) {
+    .section-main > p {
+        font-size: 40px;
+        padding: 6px;
+    }
+    .section-main > span {
+        padding: 6px;
+        font-size: 50px;
     }
 }
 @media (max-width: 280px) {
@@ -292,9 +356,9 @@ h2 {
         font-size: 25px;
     }
     .section-main > p {
-        font-size: 54px;
+        font-size: 44px;
     }
     .section-main > span {
-        font-size: 34px;
+        font-size: 44px;
     }
 }
