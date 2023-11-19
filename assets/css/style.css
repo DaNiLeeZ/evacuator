@@ -307,7 +307,7 @@ h2 {
     }
     .section-main > span {
         padding: 6px;
-        font-size: 70px;
+        font-size: 68px;
     }
     .section-dignities .items .item {
         width: 100%;
@@ -335,7 +335,7 @@ h2 {
     }
     .section-main > span {
         padding: 6px;
-        font-size: 58px;
+        font-size: 56px;
     }
 }
 @media (max-width: 320px) {
@@ -345,7 +345,7 @@ h2 {
     }
     .section-main > span {
         padding: 6px;
-        font-size: 48px;
+        font-size: 46px;
     }
 }
 @media (max-width: 280px) {
@@ -359,6 +359,6 @@ h2 {
         font-size: 44px;
     }
     .section-main > span {
-        font-size: 42px;
+        font-size: 40px;
     }
 }
