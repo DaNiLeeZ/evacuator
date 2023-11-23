@@ -61,12 +61,6 @@ h2 {
     line-height: 30px;
     font-size: 25px;
 }
-.header .navigation:hover {
-    list-style: none;
-    text-indent: 45px;
-    line-height: 30px;
-    font-size: 25px;
-}
 .header .navigation li {
     display: block;
     margin: 0 20px;
@@ -109,6 +103,8 @@ h2 {
     max-width: 1910px;
     height: 700px;
     position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .section-main .background {
     background-image: url("https://myskillsconnect.com/uploads/posts/2023-08/1690856593_myskillsconnect-com-p-evakuator-stokovoe-foto-37.jpg");
@@ -135,18 +131,22 @@ h2 {
 .section-main > p {
     line-height: 85px;
     font-size: 80px;
+    text-align: center;
 }
 .section-main > span {
     line-height: 85px;
     font-size: 100px;
     padding-top: 30px;
     font-weight: bold;
+    text-align: center;
 }
 .section-main span a {
     color: lightblue;
 }
 .section-dignities {
     background-color: aliceblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .section-dignities .items {
     display: flex;
@@ -160,7 +160,7 @@ h2 {
     align-items: center;
     width: 31.3333333%;
     padding: 20px;
-    margin: 1%;
+    margin: 15px 1%;
     border-radius: 30px;
     background-color: lightblue;
     font-size: 35px;
@@ -169,6 +169,10 @@ h2 {
     height: 90px;
     width: 100%;
     max-width: 90px;
+}
+.section-cost {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .section-cost .items {
     display: flex;
@@ -181,7 +185,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     width: 31.3333333%;
-    margin: 1%;
+    margin: 15px 1%;
     border-radius: 30px;
     overflow: hidden;
     background-color: aliceblue;
@@ -210,6 +214,8 @@ h2 {
 }
 .section-reviews {
     background-color: #181635;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .section-reviews .items {
     display: flex;
@@ -223,7 +229,7 @@ h2 {
     align-items: center;
     width: 31.3333333%;
     padding: 20px;
-    margin: 1%;
+    margin: 15px 1%;
     border-radius: 30px;
     background-color: white;
     font-size: 35px;
@@ -237,6 +243,8 @@ h2 {
 }
 .section-our-works {
     background-color: aliceblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .section-our-works .items {
     display: flex;
@@ -250,7 +258,7 @@ h2 {
     align-items: center;
     width: 31.3333333%;
     padding: 20px;
-    margin: 1%;
+    margin: 15px 1%;
     border-radius: 30px;
     background-color: white;
     font-size: 35px;
@@ -279,7 +287,10 @@ h2 {
         font-size: 35px;
     }
 }
-@media (max-width:425px) {
+@media (max-width:768px) {
+    .container {
+        max-width: 500px;
+    }
     .header {
         position: relative;
         height: auto;
@@ -299,7 +310,7 @@ h2 {
         text-align: center;
     }
     .header .logo > img {
-        max-width: 100px;
+        max-width: 200px;
     }
     .section-main > p {
         font-size: 60px;
@@ -322,6 +333,27 @@ h2 {
         width: 100%;
     }
 }
+@media (max-width: 425px) {
+    .container {
+        max-width: none;
+        padding: 0 10px;
+    }
+    .header .navigation {
+        font-size: 30px;
+    }
+    .header .logo > a {
+        font-size: 35px;
+    }
+    .header .logo > img {
+        max-width: 100px;
+    }
+    .section-main > p {
+        font-size: 50px;
+    }
+    .section-main > span {
+        font-size: 52px;
+    }
+}
 @media (max-width: 375px) {
     .header .navigation {
         font-size: 25px;
@@ -331,20 +363,16 @@ h2 {
     }
     .section-main > p {
         font-size: 50px;
-        padding: 6px;
     }
     .section-main > span {
-        padding: 6px;
         font-size: 52px;
     }
 }
 @media (max-width: 320px) {
     .section-main > p {
         font-size: 40px;
-        padding: 6px;
     }
     .section-main > span {
-        padding: 6px;
         font-size: 42px;
     }
 }
