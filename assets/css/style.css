@@ -128,10 +128,11 @@ h2 {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.8);
 }
-.section-main > p {
+.section-main > h1 {
     line-height: 85px;
     font-size: 80px;
     text-align: center;
+    margin-bottom: 20px;
 }
 .section-main > span {
     line-height: 85px;
@@ -312,7 +313,7 @@ h2 {
     .header .logo > img {
         max-width: 200px;
     }
-    .section-main > p {
+    .section-main > h1 {
         font-size: 60px;
         padding: 6px;
     }
@@ -347,11 +348,11 @@ h2 {
     .header .logo > img {
         max-width: 100px;
     }
-    .section-main > p {
-        font-size: 50px;
+    .section-main > h1 {
+        font-size: 45px;
     }
     .section-main > span {
-        font-size: 52px;
+        font-size: 47px;
     }
 }
 @media (max-width: 375px) {
@@ -361,19 +362,13 @@ h2 {
     .header .logo > a {
         font-size: 30px;
     }
-    .section-main > p {
-        font-size: 50px;
-    }
-    .section-main > span {
-        font-size: 52px;
-    }
 }
 @media (max-width: 320px) {
-    .section-main > p {
-        font-size: 40px;
+    .section-main > h1 {
+        font-size: 35px;
     }
     .section-main > span {
-        font-size: 42px;
+        font-size: 37px;
     }
 }
 @media (max-width: 280px) {
@@ -383,10 +378,10 @@ h2 {
     .header .logo > a {
         font-size: 25px;
     }
-    .section-main > p {
-        font-size: 44px;
+    .section-main > h1 {
+        font-size: 39px;
     }
     .section-main > span {
-        font-size: 34px;
+        font-size: 29px;
     }
 }
