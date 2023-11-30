@@ -31,7 +31,7 @@ h2 {
     display: flex;
     flex-direction: column;
 }
-.button {
+.buttons-box .button {
     background-color: limegreen;
     padding: 20px;
     text-align: center;
@@ -100,14 +100,13 @@ h2 {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1910px;
     height: 700px;
     position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .section-main .background {
-    background-image: url("https://myskillsconnect.com/uploads/posts/2023-08/1690856593_myskillsconnect-com-p-evakuator-stokovoe-foto-37.jpg");
+    background-image: url("../picture/section-main-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -167,7 +166,7 @@ h2 {
     font-size: 35px;
 }
 .section-dignities .items .item > img {
-    height: 90px;
+    max-height: 90px;
     width: 100%;
     max-width: 90px;
 }
@@ -237,7 +236,7 @@ h2 {
 }
 .section-reviews .items .item > img {
     border-radius: 100px;
-    width: 43.3333333%;
+    width: 45%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -281,7 +280,7 @@ h2 {
         position: relative;
         border-radius: 0;
         width: 100%;
-        max-width: 1024px;
+        max-width: none;
     }
     .header .navigation {
         padding-top: 15px;
