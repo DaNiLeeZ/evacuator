@@ -16,7 +16,7 @@ h2 {
     max-width: 1200px;
 }
 .body {
-    font-family: "Montserrat-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-variant: small-caps;
     display: flex;
@@ -262,6 +262,27 @@ h2 {
     border-radius: 30px;
     background-color: white;
     font-size: 35px;
+}
+.section-company-information {
+    background-color: #0D0D0D;
+}
+.section-company-information .items {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 20px 35px;
+}
+.section-company-information .items > h3 {
+    color: white;
+    padding: 15px;
+    font-size: 40px;
+}
+.section-company-information .items .item {
+    color: grey;
+    padding: 7px;
+    font-size: 35px;
+}
+.section-company-information .item > a {
+    color: grey;
 }
 .section-our-works .items .item > img {
     border-radius: 30px;
