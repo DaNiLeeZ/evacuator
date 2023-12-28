@@ -374,6 +374,9 @@ h2 {
     .section-main > span {
         font-size: 47px;
     }
+    .section-company-information .items .item {
+        font-size: 25px;
+    }
 }
 @media (max-width: 375px) {
     .header .navigation {
@@ -381,6 +384,9 @@ h2 {
     }
     .header .logo > a {
         font-size: 30px;
+    }
+    .section-company-information .items .item {
+        font-size: 20px;
     }
 }
 @media (max-width: 320px) {
@@ -390,6 +396,9 @@ h2 {
     .section-main > span {
         font-size: 37px;
     }
+}
+.section-company-information .items .item {
+    font-size: 15px;
 }
 @media (max-width: 280px) {
     .header .navigation {
